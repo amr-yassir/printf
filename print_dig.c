@@ -17,12 +17,12 @@ int print_dig(int n)
 		return (print_dig(-n) + 1);
 	}
 	else if (n < 10)
+	{
 		return (print_char(s[n]));
-	else if (n >= 10)
+	}
+	else
 	{
 		ctr += print_dig(n / 10);
 		return (ctr + print_dig(n % 10));
 	}
-	else
-		return (ctr);
 }
