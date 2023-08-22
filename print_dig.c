@@ -6,7 +6,7 @@
  * Return: size of output
 */
 
-int print_dig(int n)
+int print_dig(long n)
 {
 	int ctr = 0;
 	char *s = "0123456789";

@@ -21,7 +21,7 @@ int _specifier(char specifier, va_list p)
 			break;
 		case 'd':
 		case 'i':
-			ctr += print_dig(va_arg(p, int));
+			ctr += print_dig((long)va_arg(p, int));
 			break;
 		default:
 			ctr += write(1, &specifier, 1);
