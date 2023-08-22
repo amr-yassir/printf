@@ -8,7 +8,7 @@
 
 int print_dig(long n)
 {
-	int ctr = 0;
+	int ctr;
 	char *s = "0123456789";
 
 	if (n < 0)
@@ -22,7 +22,7 @@ int print_dig(long n)
 	}
 	else
 	{
-		ctr += print_dig(n / 10);
+		ctr = print_dig(n / 10);
 		return (ctr + print_dig(n % 10));
 	}
 }

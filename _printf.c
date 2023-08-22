@@ -17,9 +17,9 @@ int _printf(const char *format, ...)
 	while (*format)
 	{
 		if (*format == '%')
-			ctr = _specifier(*++format, p);
+			ctr += _specifier(*++format, p);
 		else
-			ctr = write(1, format, 1);
+			ctr += write(1, format, 1);
 		++format;
 	}
 	va_end(p);
