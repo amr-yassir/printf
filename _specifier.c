@@ -23,6 +23,9 @@ int _specifier(char specifier, va_list p)
 		case 'i':
 			ctr += print_dig((long)va_arg(p, int));
 			break;
+		case '%':
+			ctr += write(1, "%", 1);
+			break;
 		default:
 			ctr += write(1, &specifier, 1);
 			break;
