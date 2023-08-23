@@ -10,7 +10,7 @@ int _printf(const char *format, ...);
 int _specifier(char specifier, va_list p);
 int print_char(char c);
 int print_str(char *s);
-int print_dig(long n);
+int print_dig(long n, int base);
 
 
 #endif
