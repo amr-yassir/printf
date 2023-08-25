@@ -12,6 +12,6 @@ int print_char(char c);
 int print_str(char *s);
 int print_dig(long n, int base);
 int print_p_dig(long n);
-int print_HEX(unsigned int n);
+
 
 #endif
