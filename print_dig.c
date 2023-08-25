@@ -53,7 +53,7 @@ int print_HEX(long n)
 	int r, i = 0, j;
 	int *hex = NULL;
 
-	hex = (int *)malloc(sizeof(int) * n);
+	hex = (int *)malloc(sizeof(int) * 40);
 
 	if (hex == NULL)
 		return (-1);
