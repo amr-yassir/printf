@@ -33,7 +33,10 @@ int _specifier(char specifier, va_list p)
 			ctr += print_dig((long)va_arg(p, int), 8);
 			break;
 		case 'x':
-			ctr += print_HEX((long)va_arg(ap, unsigned int));
+			ctr += print_dig((long)va_arg(p, int), 16);
+			break;
+		case 'X':
+			print_HEX((long)va_arg(p, unsigned int));
 			break;
 		default:
 			ctr += write(1, &specifier, 1);

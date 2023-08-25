@@ -49,7 +49,6 @@ int print_p_dig(long n)
 
 int print_HEX(unsigned int n)
 {
-/*
 	int ctr = 0;
 	int r, i = 0, j;
 	int *hex = NULL;
@@ -80,5 +79,4 @@ int print_HEX(unsigned int n)
 		free(hex);
 		return (ctr);
 	}
-*/
 }
