@@ -35,9 +35,6 @@ int _specifier(char specifier, va_list p)
 		case 'x':
 			ctr += print_dig((long)va_arg(p, int), 16);
 			break;
-		case 'X':
-			ctr += print_dig((long)va_arg(p, int), 16);
-			break;
 		default:
 			ctr += write(1, &specifier, 1);
 			break;
