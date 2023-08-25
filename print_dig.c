@@ -31,6 +31,7 @@ int print_dig(long n, int base)
 /**
  * print_p_dig - convert int to unsigned int
  * @n: input
+ * Return: size of output
 */
 
 int print_p_dig(long n)
