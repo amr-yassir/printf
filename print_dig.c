@@ -47,7 +47,7 @@ int print_p_dig(long n)
  * @n: input
  * Return: number of printed output*/
 
-int print_HEX(unsigned int n)
+int print_HEX(long n)
 {
 	int ctr = 0;
 	int r, i = 0, j;
