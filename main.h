@@ -5,7 +5,6 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int _printf(const char *format, ...);
 int _specifier(char specifier, va_list p);
@@ -16,7 +15,6 @@ int print_p_dig(long n);
 int print_HEX(long n);
 int print_0xS(char *s);
 int print_rev(char *s);
-int print_rot(char *s);
 int _strlen(char *s);
 
 
