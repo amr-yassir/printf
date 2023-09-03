@@ -79,7 +79,7 @@ int print_0xS(char *s)
 
 int print_rev(char *s)
 {
-	int i = _strlen(s) - 1;
+	int i = _strlen(s);
 
 	while (i--)
 		print_char(s[i]);
