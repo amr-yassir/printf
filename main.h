@@ -16,8 +16,8 @@ int print_p_dig(long n);
 int print_HEX(long n);
 int print_0xS(char *s);
 int print_rev(char *s);
-int _strlen(char *s);
 int print_rot(char *s);
+
 
 
 
