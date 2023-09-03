@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * _strlen - gets the lenght of a string
+ * @s: string to be calculted
+ * Return: length of the string s
+*/
+
+int _strlen(char *s)
+{
+	int len;
+
+	for (len = 0; *(s + len) != '\0'; len++)
+		;
+	return (len);
+}
+
+/**
  * print_str - prints a string
  * @s: pointer to array of char
  * Return: size of string
@@ -65,9 +80,9 @@ int print_rev(char *s)
 {
 	int i;
 
-	i = strlen(s);
+	i = _strlen(s);
 	while (i--)
 		print_char(s[i]);
 
-	return (strlen(s));
+	return (_strlen(s));
 }
