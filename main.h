@@ -15,5 +15,6 @@ int print_p_dig(long n);
 int print_HEX(long n);
 int print_0xS(char *s);
 
+int _puts_0xS(char *S)
 
 #endif

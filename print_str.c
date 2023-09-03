@@ -28,8 +28,6 @@ int print_0xS(char *s)
 	int ctr = 0;
 	int i = 0;
 
-	if (s == NULL)
-		return (0);
 	while (*s)
 	{
 		if (*s > 0 && *s < 32 || *s >= 127)

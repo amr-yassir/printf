@@ -20,7 +20,7 @@ int _specifier(char specifier, va_list p)
 			ctr += print_str(va_arg(p, char *));
 			break;
 		case 'S':
-			ctr += print_0xS(va_arg(p, char *));
+			ctr += _puts_0xS(va_arg(p, char *));
 			break;
 		case 'd':
 		case 'i':
