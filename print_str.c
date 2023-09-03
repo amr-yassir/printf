@@ -80,8 +80,7 @@ int print_rev(char *s)
 {
 	int i;
 
-	i = _strlen(s);
-	while (i--)
+	for (i = _strlen(s) - 1; i >= 0; i--)
 		print_char(s[i]);
 
 	return (_strlen(s));
