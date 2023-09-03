@@ -33,9 +33,3 @@ int print_str(char *s)
 	return (ctr);
 }
 
-/***/
-
-int print_0xS(char *s)
-{
-	return (0);
-}
