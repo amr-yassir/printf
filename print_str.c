@@ -18,17 +18,6 @@ int _strlen(char *s)
 }
 
 /**
- * print_char - print a single character
- * @c: input
- * Return: size of output
-*/
-
-int print_char(char c)
-{
-	return (write(1, &c, 1));
-}
-
-/**
  * print_str - prints a string
  * @s: pointer to array of char
  * Return: size of string
