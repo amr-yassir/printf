@@ -27,16 +27,16 @@ int _specifier(char specifier, va_list p)
 			ctr += print_dig((long)va_arg(p, unsigned int), 2);
 			break;
 		case 'u':
-			ctr += print_p_dig((long)va_arg(p, int));
+			ctr += print_p_dig((long)va_arg(p, unsigned int));
 			break;
 		case 'o':
-			ctr += print_dig((long)va_arg(p, int), 8);
+			ctr += print_dig((long)va_arg(p, unsigned int), 8);
 			break;
 		case 'x':
-			ctr += print_dig((long)va_arg(p, int), 16);
+			ctr += print_dig((long)va_arg(p, unsigned int), 16);
 			break;
 		case 'X':
-			ctr += print_dig((long)va_arg(p, int), 16);
+			ctr += print_HEX((long)va_arg(p, unsigned int));
 			break;
 		default:
 			ctr += write(1, &specifier, 1);

@@ -41,3 +41,30 @@ int print_p_dig(long n)
 	else
 		return (print_dig(n, 10));
 }
+
+/**
+ * print_HEX - prints numbers in HEXADECIMAL
+ * @n: input
+ * Return: number of printed output
+*/
+
+int print_HEX(long n)
+{
+	int ctr;
+	char *s = "0123456789ABCDEF";
+
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		return (print_HEX(-n) + 1);
+	}
+	else if (n < 16)
+	{
+		return (print_char(s[n]));
+	}
+	else
+	{
+		ctr = print_HEX(n / 16);
+		return (ctr + print_HEX(n % 16));
+	}
+}
