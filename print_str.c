@@ -103,11 +103,11 @@ int print_rot(char *s)
 	{
 		ch = s[i];
 		if ((ch >= 'A' && ch <= 'M') || (ch >= 'a' && ch <= 'm'))
-			_putchar(ch + 13);
+			print_char(ch + 13);
 		else if ((ch >= 'N' && ch <= 'Z') || (ch >= 'n' && ch <= 'z'))
-			_putchar(ch - 13);
+			print_char(ch - 13);
 		else
-			_putchar(ch);
+			print_char(ch);
 	}
 	return (i);
 }
