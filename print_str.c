@@ -16,3 +16,39 @@ int print_str(char *s)
 	return (ctr);
 }
 
+/**
+ * print_0xS - prints a string in a special way
+ * @s: string
+ *
+ * Return: number of printed output
+*/
+
+int print_0xS(char *s)
+{
+	int ctr = 0;
+	int i = 0;
+
+	while (*s)
+	{
+		if (*s > 0 && *s < 32 || *s >= 127)
+		{
+			print_char('\\');
+			print_char('x');
+			ctr += 2;
+
+			if (*s < 16)
+			{
+				print_char('0');
+				ctr++;
+			}
+			ctr += print_HEX(*s);
+		}
+		else
+		{
+			print_char(*s);
+			ctr++;
+		}
+		s++;
+	}
+	return (ctr);
+}

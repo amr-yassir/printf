@@ -19,6 +19,9 @@ int _specifier(char specifier, va_list p)
 		case 's':
 			ctr += print_str(va_arg(p, char *));
 			break;
+		case 'S':
+			ctr += print_0xS(va_arg(p, char *));
+			break;
 		case 'd':
 		case 'i':
 			ctr += print_dig((long)va_arg(p, int), 10);
