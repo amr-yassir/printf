@@ -26,7 +26,6 @@ int print_str(char *s)
 int print_0xS(char *s)
 {
 	int ctr = 0;
-	int i = 0;
 
 	if (s == NULL)
 		s = "(null)";
