@@ -28,9 +28,11 @@ int print_0xS(char *s)
 	int ctr = 0;
 	int i = 0;
 
+	if (s == NULL)
+		s = "(null)";
 	while (*s)
 	{
-		if (*s > 0 && *s < 32 || *s >= 127)
+		if (*s < 32 || *s >= 127)
 		{
 			print_char('\\');
 			print_char('x');
