@@ -86,3 +86,28 @@ int print_rev(char *s)
 
 	return (_strlen(s));
 }
+
+/**
+ * print_rot - prints the rot13'ed string
+ * @s: input
+ *
+ * Return: number of printed output
+*/
+
+int print_rot(char *s)
+{
+	int i;
+	char ch;
+
+	for (i = 0; s[i]; i++)
+	{
+		ch = s[i];
+		if ((ch >= 'A' && ch <= 'M') || (ch >= 'a' && ch <= 'm'))
+			_putchar(ch + 13);
+		else if ((ch >= 'N' && ch <= 'Z') || (ch >= 'n' && ch <= 'z'))
+			_putchar(ch - 13);
+		else
+			_putchar(ch);
+	}
+	return (i);
+}
