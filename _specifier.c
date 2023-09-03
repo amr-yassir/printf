@@ -41,6 +41,12 @@ int _specifier(char specifier, va_list p)
 		case 'X':
 			ctr += print_HEX((long)va_arg(p, unsigned int));
 			break;
+		case 'r':
+			ctr += print_rev(va_arg(p, char *));
+			break;
+		case 'R':
+			ctr += print_rot(va_arg(p, char *));
+			break;
 		default:
 			ctr += write(1, &specifier, 1);
 			break;
