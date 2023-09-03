@@ -48,3 +48,5 @@ int print_str(char *s)
 
 int print_0xS(char *s)
 {
+	return (0);
+}
