@@ -8,10 +8,11 @@
 
 int _strlen(char *s)
 {
-	int len;
+	int len = 0;
 
-	for (len = 0; *(s + len) != '\0'; len++)
-		;
+	while (*s++)
+		len++;
+
 	return (len);
 }
 
@@ -78,9 +79,9 @@ int print_0xS(char *s)
 
 int print_rev(char *s)
 {
-	int i;
+	int i = _strlen(s) - 1;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	while (i--)
 		print_char(s[i]);
 
 	return (_strlen(s));
