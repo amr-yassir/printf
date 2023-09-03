@@ -13,8 +13,6 @@ int print_str(char *s);
 int print_dig(long n, int base);
 int print_p_dig(long n);
 int print_HEX(long n);
-int _strlen(char *s);
-int print_0xS(char *s);
 
 
 #endif
